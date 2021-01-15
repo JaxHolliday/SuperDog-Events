@@ -54,10 +54,10 @@
         <nav class="nav-menu">
             <ul>
                 <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                <li><a href="#about"><i class="bx bx-"></i> <span>Background</span></a></li>
+                <li><a href="#about"><i class="bx bx-bone"></i> <span>Background</span></a></li>
                 <li><a href="#solve"><i class="bx bx-brain"></i> <span>Solve</span></a></li>
                 <li><a href="#code"><i class="bx bx-code"></i> <span>Code</span></a></li>
-                <li><a class="nav-link" href="#" target="_blank"><i class="bx bxl-github"></i> <span>GitHub Repository</span></a></li>
+                <li><a class="nav-link" href="https://github.com/JaxHolliday/SuperDog-Events" target="_blank"><i class="bx bxl-github"></i> <span>GitHub Repository</span></a></li>
                 <li><a class="nav-link" href="https://jackson-hollidays-portfolio.netlify.app/" target="_blank"><i class="bx bx-user"></i> <span>Portfolio</span></a></li>
             </ul>
         </nav><!-- .nav-menu -->
@@ -147,32 +147,37 @@
                                 <!--Template for dropdown-->
                             </div>
                         </div>
-                        <table class="table table-striped">
-                            <tr>
-                                <th colspan="2" id="statsHeader">Stats For All Events</th>
-                            </tr>
-                            <tr>
-                                <td>Total Attendance</td>
-                                <td id="total">100</td>
-                            </tr>
-                            <tr>
-                                <td>Average Attendance</td>
-                                <td id="average">100</td>
-                            </tr>
-                            <tr>
-                                <td>Most Attended</td>
-                                <td id="most">100</td>
-                            </tr>
-                            <tr>
-                                <td>Least Attended</td>
-                                <td id="least">100</td>
-                            </tr>
-                        </table>
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th colspan="2" id="statsHeader">Stats For All Events</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Attendance</td>
+                                        <td id="total">100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Average Attendance</td>
+                                        <td id="average">100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Most Attended</td>
+                                        <td id="most">100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Least Attended</td>
+                                        <td id="least">100</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </div>
                     </div>
                     <br />
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col">                        
                         <div class="table-responsive">
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                                 Add Data
@@ -191,7 +196,7 @@
                                     <!--Data goes here-->
                                 </tbody>
                             </table>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
                 <template id="eventData-template">
