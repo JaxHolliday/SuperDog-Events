@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>SuperDog Events</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/icofont.min.css" rel="stylesheet">
+    <link href="css/boxicons.min.css" rel="stylesheet">
+    <link href="css/venobox.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet" />
+
+    <style>
+        #hero {
+            width: 100%;
+            height: 100vh;
+            background: url("/img/Superdog.jpg") top right no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+    <!-- =======================================================
+    * Template Name: MyResume - v2.2.0
+    * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+<body onload="buildDropDown()">
+    <!-- ======= Mobile nav toggle button ======= -->
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+
+        <nav class="nav-menu">
+            <ul>
+                <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                <li><a href="#about"><i class="bx bx-"></i> <span>Background</span></a></li>
+                <li><a href="#solve"><i class="bx bx-brain"></i> <span>Solve</span></a></li>
+                <li><a href="#code"><i class="bx bx-code"></i> <span>Code</span></a></li>
+                <li><a class="nav-link" href="#" target="_blank"><i class="bx bxl-github"></i> <span>GitHub Repository</span></a></li>
+                <li><a class="nav-link" href="https://jackson-hollidays-portfolio.netlify.app/" target="_blank"><i class="bx bx-user"></i> <span>Portfolio</span></a></li>
+            </ul>
+        </nav><!-- .nav-menu -->
+
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Super-Dog Events</h1>
+            <p>I'm <span class="typed" data-typed-items="A. Jackson Holliday"></span></p>
+            <div class="social-links">
+                <a href="https://twitter.com/JacksonHollida1" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://github.com/JaxHolliday" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://secure.skype.com/portal/overview" class="google-plus" target="_blank"><i class="bx bxl-skype"></i></a>
+                <a href="https://www.linkedin.com/in/jackson-holliday-08454a1ab/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="dogContainer" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Background</h2>
+                    <p style="font-size: 18px">
+                        SuperDog Events is an event company the produces comic cons. The marketing team has requested a
+                        site the
+                        displays stats from their events. You are given an array of event data to build a site.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="/img/SuperDogEventsWebLogosmall.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                        <h3>Description</h3>
+                        <p class="font-italic">
+                            <b>Given an array of objects of event data display the following:</b>
+                            <ul>
+                                <li>Total attendance by City</li>
+                                <li>Average Attendance by City</li>
+                                <li>Least attended event by City</li>
+                                <li>Most attended event by City</li>
+                                <li>Also Show these stats for All Events</li>
+                                <li>Extra Credit: Add the ability to add additional events. Store the events in local storage.</li>
+                            </ul>
+                        </p>
+                        <p><b>Below is the array of data you are given:</b></p>
+                        <pre>
+                        <code class="language-js">
+[{event: "ComicCon",city: "New York",state: "New York",attendance: 240000,date: "06/01/2017"},
+{event: "ComicCon",city: "New York",state: "New York",attendance: 250000,date: "06/01/2018"},
+{event: "ComicCon",city: "New York",state: "New York",attendance: 257000,date: "06/01/2019"},
+{event: "ComicCon",city: "San Diego",state: "California",attendance: 130000,date: "06/01/2017"},
+{event: "ComicCon",city: "San Diego",state: "California",attendance: 140000,date: "06/01/2018"},
+{event: "ComicCon",city: "San Diego",state: "California",attendance: 150000,date: "06/01/2019"},
+{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 40000,date: "06/01/2017"},
+{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 45000,date: "06/01/2018"},
+{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 50000,date: "06/01/2019"}]
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+        <!-- ======= Solve Section ======= -->
+        <section id="solve" class="facts">
+            <div class="dogContainer" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Solve</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Pick a Location</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div id="eventDropDown" class="dropdown-menu">
+                                <!--Template for dropdown-->
+                            </div>
+                        </div>
+                        <table class="table table-striped">
+                            <tr>
+                                <th colspan="2" id="statsHeader">Stats For All Events</th>
+                            </tr>
+                            <tr>
+                                <td>Total Attendance</td>
+                                <td id="total">100</td>
+                            </tr>
+                            <tr>
+                                <td>Average Attendance</td>
+                                <td id="average">100</td>
+                            </tr>
+                            <tr>
+                                <td>Most Attended</td>
+                                <td id="most">100</td>
+                            </tr>
+                            <tr>
+                                <td>Least Attended</td>
+                                <td id="least">100</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Add Data
+                            </button>
+                            <table class="table table-striped" id="eventData">
+                                <thead class="thead-dark bg-primary">
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <th>City</th>
+                                        <th>State</th>
+                                        <th>Attendance</th>
+                                        <th>Event Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="eventBody">
+                                    <!--Data goes here-->
+                                </tbody>
+                            </table>
+                        </div>                        
+                    </div>
+                </div>
+                <template id="eventData-template">
+                    <tr>
+                        <td id="event"></td>
+                        <td id="city"></td>
+                        <td id="state"></td>
+                        <td id="attendance"></td>
+                        <td id="eventDate"></td>
+                    </tr>
+                </template>
+            </div>
+        </section><!-- End Solve Section -->
+        <!-- ======= Code Section ======= -->
+        <section id="code" class="skills section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Code</h2>
+                    <p style="font-size: 15px;">The following the JavaScript code used for this exercise.</p>
+                </div>
+
+                <div class="row skills-content">
+                    <p>
+                        <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#js" aria-expanded="false" aria-controls="multiCollapseExample2" style="justify-content: center;">Toggle JavaScript Code</button>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="js">
+                                <div class="card card-body">
+                                    <!-- Code for my FizzBuzz Exercise -->
+                                    <pre><code class="language-js line-numbers"><script>
+//Hard Coded Date for table 
+var events = [{
+    event: "ComicCon",
+    city: "New York",
+    state: "New York",
+    attendance: 240000,
+    date: "06/01/2017",
+},
+{
+    event: "ComicCon",
+    city: "New York",
+    state: "New York",
+    attendance: 250000,
+    date: "06/01/2018",
+},
+{
+    event: "ComicCon",
+    city: "New York",
+    state: "New York",
+    attendance: 257000,
+    date: "06/01/2019",
+},
+{
+    event: "ComicCon",
+    city: "San Diego",
+    state: "California",
+    attendance: 130000,
+    date: "06/01/2017",
+},
+{
+    event: "ComicCon",
+    city: "San Diego",
+    state: "California",
+    attendance: 140000,
+    date: "06/01/2018",
+},
+{
+    event: "ComicCon",
+    city: "San Diego",
+    state: "California",
+    attendance: 150000,
+    date: "06/01/2019",
+},
+{
+    event: "HeroesCon",
+    city: "Charlotte",
+    state: "North Carolina",
+    attendance: 40000,
+    date: "06/01/2017",
+},
+{
+    event: "HeroesCon",
+    city: "Charlotte",
+    state: "North Carolina",
+    attendance: 45000,
+    date: "06/01/2018",
+},
+{
+    event: "HeroesCon",
+    city: "Charlotte",
+    state: "North Carolina",
+    attendance: 50000,
+    date: "06/01/2019",
+},
+];
+
+//the default display is all events
+var filteredEvents = events;
+
+//building a dropdown of specific cities
+function buildDropDown() {
+    var eventDD = document.getElementById("eventDropDown");
+    //Spread operator(Create elements and bring them back into array)
+    //Set Op(Return Unique values passed into array)
+    //passes Events uses MAP(), tell it what you want inside of that
+    //looking at cities/bring back unique values andturn into an array
+    let distinctEvents = [...new Set(events.map((event) => event.city))];
+    //
+    let linkHTMLEnd =
+        '<div class="dropdown-divider"></div><a class="dropdown-item" onclick="getEvents(this)" data-string="All" >All</a>';
+    let resultHTML = "";
+
+    for (var i = 0; i < distinctEvents.length; i++) {
+        resultHTML += `<a class="dropdown-item" onclick="getEvents(this)"
+data-string="${distinctEvents[i]}">${distinctEvents[i]}</a>`;
+    }
+    resultHTML += linkHTMLEnd;
+    eventDD.innerHTML = resultHTML;
+    displayStats();
+    displayData();
+}
+
+//show stats for a specific location
+function getEvents(element) {
+    //allows to get "data-string element" from a tag
+    let city = element.getAttribute("data-string");
+    curEvents = JSON.parse(localStorage.getItem("eventsArray")) || events;
+    filteredEvents = curEvents;
+    document.getElementById("statsHeader").innerHTML = `Stats For ${city} Events`;
+    //if not all, use all the stats
+    if (city != "All") {
+        filteredEvents = curEvents.filter(function (item) {
+            if (item.city == city) {
+                return item;
+            }
+        });
+    }
+    displayStats();
+}
+
+function displayStats() {
+    let total = 0;
+    let average = 0;
+    let most = 0;
+    let least = -1;
+    let currentAttendance = 0;
+
+    //display total attendance per event from current/most/least
+    for (var i = 0; i < filteredEvents.length; i++) {
+        currentAttendance = filteredEvents[i].attendance;
+        total += currentAttendance;
+        //checking most attendance, adjusts attendance totals in for loop 
+        if (most < currentAttendance) {
+            most = currentAttendance;
+        }
+        //checking least attendence, adjusts attendance totals in for loop
+        if (least > currentAttendance || least < 0) {
+            least = currentAttendance;
+        }
+    }
+    average = total / filteredEvents.length;
+    //giving the values found and posting them to appropriate spots 
+    document.getElementById("total").innerHTML = total.toLocaleString();
+    document.getElementById("most").innerHTML = most.toLocaleString();
+    document.getElementById("least").innerHTML = least.toLocaleString();
+    //making sure that the value is rounded to 2 digits
+    document.getElementById("average").innerHTML = average.toLocaleString(
+        undefined, {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+    }
+    );
+}
+
+function displayData() {
+    const template = document.getElementById("eventData-template");
+    const eventBody = document.getElementById("eventBody");
+    //resets every time it is called 
+    eventBody.innerHTML = "";
+    //grab the events from local storage
+    //allows to store complex data sets in storage, goes here instead of docs
+    //null item will make it falsey
+    let curEvents = JSON.parse(localStorage.getItem("eventsArray")) || [];
+
+    if (curEvents.length == 0) {
+        curEvents = events;
+        //where its going -> what i want to send 
+        localStorage.setItem("eventsArray", JSON.stringify(curEvents));
+    }
+    for (var i = 0; i < curEvents.length; i++) {
+        const eventRow = document.importNode(template.content, true);
+
+        eventRow.getElementById("event").textContent = curEvents[i].event;
+        eventRow.getElementById("city").textContent = curEvents[i].city;
+        eventRow.getElementById("state").textContent = curEvents[i].state;
+        eventRow.getElementById("attendance").textContent = curEvents[i].attendance;
+        eventRow.getElementById("eventDate").textContent = new Date(
+            curEvents[i].date
+        ).toLocaleDateString();
+        //creating row for each new data creation
+        eventBody.appendChild(eventRow);
+    }
+}
+
+function saveEventData() {
+    //grab the events out of local storage
+    let curEvents = JSON.parse(localStorage.getItem("eventsArray")) || events;
+
+    document.getElementById("newEventName");
+    let obj = {};
+    obj["event"] = document.getElementById("newEventName").value;
+    obj["city"] = document.getElementById("newEventCity").value;
+    obj["state"] = document.getElementById("newEventState").value;
+    obj["attendance"] = parseInt(
+        document.getElementById("newEventAttendance").value,
+        10
+    );
+    obj["date"] = new Date(
+        document.getElementById("newEventDate").value
+    ).toLocaleDateString();
+
+    curEvents.push(obj);
+
+    localStorage.setItem("eventsArray", JSON.stringify(curEvents));
+
+    //Access the values from the form by ID and add an object to the array.
+    displayData();
+}
+</script>
+</code>
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Skills Section -->
+        <!-- ======= Technology Section ======= -->
+        <section id="skills" class="skills section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Technologies</h2>
+                    <p style="font-size: 15px;">Technologies Used: HTML, CSS, JavaScript, jQuery and Bootstrap. Made in VS Studio 2019 with code on GitHub.</p>
+                </div>
+
+                <div class="row skills-content">
+                    <img src="https://img.icons8.com/color/144/000000/html-5.png" />
+                    <img src="https://img.icons8.com/color/144/000000/css3.png" />
+                    <img src="https://img.icons8.com/color/144/000000/javascript.png" />
+                    <img src="https://img.icons8.com/ios-filled/144/000000/jquery.png" />
+                    <img src="https://img.icons8.com/color/144/000000/bootstrap.png" />
+                    <img src="https://img.icons8.com/fluent/144/000000/visual-studio-2019.png" />
+                    <img src="https://img.icons8.com/bubbles/144/000000/github.png" />
+                </div>
+
+            </div>
+        </section><!-- End Skills Section -->
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Jackson Holliday</h3>
+            <p>If your looking for more, hit up some of the social links or the tabs on the left to go to my github or portfolio</p>
+            <div class="social-links">
+                <a href="https://twitter.com/JacksonHollida1" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://github.com/JaxHolliday" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://secure.skype.com/portal/overview" class="google-plus" target="_blank"><i class="bx bxl-skype"></i></a>
+                <a href="https://www.linkedin.com/in/jackson-holliday-08454a1ab/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: [license-url] -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade.</a>
+                <p style="font-size: 15px">Customized by Jackson Holliday</p>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/prism.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+    <script src="js/Superdog.js"></script>
+
+    <!-- Modal for Add Data -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add A New Event</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form id="newEventForm">
+                        <div class="form-group">
+                            <label for="newEventName">Event Name</label>
+                            <input type="text" class="form-control" id="newEventName" placeholder="Event">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventCity">City</label>
+                            <input type="text" class="form-control" id="newEventCity" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventState">State</label>
+                            <input type="text" class="form-control" id="newEventState" placeholder="State">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventAttendance">Attendance</label>
+                            <input type="number" class="form-control" id="newEventAttendance" placeholder="Attendance">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventDate">Event Date</label>
+                            <input type="date" class="form-control" id="newEventDate" placeholder="Date">
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" onclick="saveEventData()" class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Save
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
